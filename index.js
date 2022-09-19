@@ -48,13 +48,6 @@ Manager @MicrasRuleStudio`,
     },
     {
         author: {
-            name: "Richard Stallman",
-            avatar: null,
-        },
-        post: "I'm a GNUru!",
-    },
-    {
-        author: {
             name: "Island Boys",
             avatar: "island.jpg",
         },
@@ -93,7 +86,7 @@ for (let i = 0; i < POSTS.length; i++) {
     imgEl.src = `./images/${POSTS[i].author.avatar}`;
 
     const authorNameEl = document.createElement("div");
-    authorNameEl.classList.add("post-author-name")
+    authorNameEl.classList.add("post-author-name");
     authorNameEl.innerText = POSTS[i].author.name;
 
     const postBodyEl = document.createElement("div");
@@ -108,3 +101,4 @@ for (let i = 0; i < POSTS.length; i++) {
     const postsEl = document.querySelector(".posts");
     postsEl.appendChild(postElement);
 }
+
