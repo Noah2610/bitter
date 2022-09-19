@@ -20,21 +20,20 @@ main {
     background-color: var(--bg);
     color: var(--fg);
     box-shadow: 0 0 8px 8px var(--bg);
-
-    height: 100vh; /* TODO */
 }
 
 .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 2em;
 }
 
 .header-icon {
     display: inline;
-    width: 64px;
-    height: 64px;
-    margin-right: 32px;
+    width: 96px;
+    height: 96px;
+    margin-right: 2em;
 }
 
 .header-title {
@@ -81,3 +80,4 @@ main {
 .post-body {
     font-size: 0.8em;
 }
+
