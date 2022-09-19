@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+
+    font-size: 24px;
+    font-family: monospace;
+}
+
+main {
+    --bg: #16181c;
+    --fg: #ffffff;
+
+    max-width: 800px;
+    width: 100%;
+    padding: 1em;
+
+    background-color: var(--bg);
+    color: var(--fg);
+    box-shadow: 0 0 8px 8px var(--bg);
+
+    height: 100vh; /* TODO */
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-icon {
+    display: inline;
+    width: 64px;
+    height: 64px;
+    margin-right: 32px;
+}
+
+.header-title {
+    display: inline;
+}
+
+.post {
+    --bg: #202020;
+    --bg-alt: #242424;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1em;
+    background-color: var(--bg);
+    border-radius: 8px;
+}
+
+.post:nth-child(2n) {
+    background-color: var(--bg-alt);
+}
+
+.post-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 1em;
+    min-width: 6em;
+    max-width: 6em;
+}
+
+.post-author-avatar {
+    width: 4em;
+    height: 4em;
+}
+
+.post-author-name {
+    text-align: center;
+}
+
+.post-body {
+    font-size: 0.8em;
+}
